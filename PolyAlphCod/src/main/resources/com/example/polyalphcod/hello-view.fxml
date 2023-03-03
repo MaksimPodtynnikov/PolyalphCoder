@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<VBox alignment="CENTER" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.polyalphcod.HelloController">
+   <children>
+      <Label text="Текст" />
+      <TextArea fx:id="text" />
+      <Label text="Результат" />
+      <TextArea fx:id="code" />
+      <Button mnemonicParsing="false" onAction="#textToCode" prefHeight="25.0" text="Зашифровать" textAlignment="CENTER" />
+      <Button mnemonicParsing="false" onAction="#codeToText" text="Расшифровать" />
+   </children>
+</VBox>

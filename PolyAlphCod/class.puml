@@ -1,0 +1,22 @@
+@startuml
+class com.example.polyalphcod.HelloApplication {
++ void start(Stage)
++ {static} void main(String[])
+}
+class com.example.polyalphcod.PolyAlphabet {
+- {static} String alphabet
+- {static} String code
+- {static} String secondCode
++ {static} String encrypt(String)
++ {static} String decipher(String)
+}
+class com.example.polyalphcod.HelloController {
++ TextArea text
++ TextArea code
+- void textToCode()
+- void codeToText()
+}
+
+
+javafx.application.Application <|-- com.example.polyalphcod.HelloApplication
+@enduml
